@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+textarea {
+  display: block;
+  outline: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 10px 10px;
+}
+
+button {
+  float: right;
+  margin: 7px 0;
+}
+
+button:not(:last-child) {
+  margin-right: 2px;
+}
+
+output {
+  display: block;
+  margin: 10px 10px;
+}

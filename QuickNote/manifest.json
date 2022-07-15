@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Quick Note",
+  "description": "Chrome extension for taking quick notes",
+  "version": "0.1.0",
+  "icons": {
+    "16": "img/icons/note16.png",
+    "48": "img/icons/note48.png",
+    "128": "img/icons/note128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "img/icons/note16.png",
+      "48": "img/icons/note48.png",
+      "128": "img/icons/note128.png"
+    },
+    "default_title": "Quick Note",
+    "default_popup": "html/popup.html"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["js/common.js", "js/events.js"]
+  },
+  "permissions": ["storage"],
+  "options_ui": {
+    "chrome_style": true,
+    "page": "html/customize.html"
+  }
+}
